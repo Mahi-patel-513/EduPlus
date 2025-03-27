@@ -1,0 +1,179 @@
+/* Main Container */
+.main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Todo Container */
+.todo-container {
+  width: 70%;
+  /* max-width: 500px; */
+  height: 100%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.todo-heading {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #176d81;
+  margin-bottom: 20px;
+}
+
+
+/* Task Input */
+
+.task-input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-input input,
+.task-input textarea {
+  display: block;
+  width: 80%;
+  background-color: #ebecfe;
+  padding: 12px;
+  border: 0;
+  outline: 0;
+  margin: 5px 0px 15px 0px;
+  resize: none;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: medium;
+}
+
+.task-input button {
+  width: 40%;
+  background-color: #176d81;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  margin-top: 15px;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Add Task Button */
+.add-task-btn {
+  width: 20%;
+  background-color: #176d81;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  margin-top: 15px;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.add-task-btn:hover {
+  background-color: #00c3ff;
+}
+
+/* Task List Styling */
+.task-list {
+  margin-top: 20px;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.task-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.task-item h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.task-item p {
+  color: #555;
+  font-size: 15px;
+}
+
+/* Status Styles */
+.task-status {
+  font-size: 18px !important;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.status-text {
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* Custom Status Colors */
+.status-text.not-started {
+  color: #f0ad4e;
+}
+
+.task-status.in-progress {
+  color: #0800ff;
+}
+
+.task-status.missed {
+  color: red;
+}
+
+.task-status.completed {
+  color: #009c00;
+}
+
+/* Buttons Styling */
+.edit-btn,
+.complete-btn,
+.delete-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  width: 10%;
+  margin-bottom: 8px;
+}
+
+.edit-btn {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+.complete-btn {
+  background-color: #5cb85c;
+  color: white;
+  width: 14%;
+}
+
+.delete-btn {
+  background-color: #d9534f;
+  color: white;
+}
+
+.edit-btn:hover,
+.complete-btn:hover,
+.delete-btn:hover {
+  opacity: 0.8;
+}

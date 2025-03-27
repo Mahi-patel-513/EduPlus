@@ -1,0 +1,237 @@
+  
+  /* Smart Study Planner Container */
+  .study-planner-container {
+    /* max-width: 1500px; */
+    width: 100%;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #176D81;
+    text-align: start;
+    margin-bottom: 20px;
+    /* text-transform: uppercase; */
+  }
+  
+  /* .description {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  } */
+  
+  /* Calendar Controls */
+  .calendar-controls {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 25px;
+  }
+  
+  .calendar-controls button {
+    padding: 11px 26px;
+    font-size: 1rem;
+    background-color: #176D81;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .calendar-controls button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+  }
+  
+  /* Calendar Container */
+  .calendar-container {
+    /* max-width: 900px; */
+    /* display: flex;
+    flex-direction: column; */
+    border-radius: 10px;
+    /* gap: 50px; */
+    overflow: hidden;
+  }
+  
+  /* FullCalendar Custom Styles */
+  .fc {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  .fc-view-container {
+    max-height: 400px !important; /* Calendar ki height control karne ke liye */
+  }
+
+  /* .fc-header-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  } */
+  
+  .fc-toolbar-chunk {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .fc-toolbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1; /* Title ko center me lane ke liye */
+  }
+
+  .fc-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    background-color: #f6f6f7;
+    color: #0061a2;
+    padding: 15px 30px;
+    gap: 10px;
+    border-radius: 10px;
+  }
+
+  .fc-prev-button {
+    margin-left: 80px !important;
+    color: white !important;
+  }
+
+  .fc-icon {
+    color: white;
+  }
+  
+  /* .fc-today-button{
+    margin-left: 20px !important;
+  } */
+
+  .fc-toolbar button {
+    background-color: #2980b9 !important;
+    color: white !important;
+    border: none !important ; 
+    gap: 2px !important;
+    font-size: 1.1rem !important;
+  }
+  
+  .fc-toolbar button:hover {
+    background-color: #005e73 !important;
+    color: white !important;
+  }
+  
+  .fc-button-group{
+    gap: 10px;
+  }
+
+  .fc-dayGridMonth-button{
+    border-radius: 5px !important;
+  }
+
+  .fc-timeGridWeek-button{
+    border-radius: 5px !important;
+  }
+
+  .fc-timeGridDay-button{
+    border-radius: 5px !important;
+  }
+
+  .fc-daygrid-day {
+    border-radius: 8px;
+    background-color: #ecf0f1;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .fc-daygrid-day:hover {
+    background-color: #bdc3c7;
+  }
+  
+  .fc-daygrid-day.fc-day-today {
+    background-color: white !important;
+    color: black ;
+    border-radius: 10px;
+  }
+  
+  .fc-daygrid-day.fc-day-today:hover {
+    background-color: #2980b9 !important;
+    color: white;
+  }
+  
+  .fc-daygrid-event {
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 5px;
+    padding: 7px;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .fc-daygrid-event:hover {
+    background-color: #2ecc71;
+    color: white;
+    /* transform: translateY(-5px); */
+    transform: translateY(-8px);
+  }
+  
+  /* Notification Reminder */
+  .fc-daygrid-event::after {
+    content: "🔔";
+    font-size: 1.2rem;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .notification-container {
+    padding: 15px;
+    background-color: #f39c12;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  .notification-container span {
+    font-weight: bold;
+  }
+  
+  .notification-container button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .notification-container button:hover {
+    background-color: #e67e22;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .calendar-controls {
+        flex-direction: column;
+        gap: 15px;
+    }
+  
+    .calendar-controls button {
+        width: 100%;
+    }
+  }
+  

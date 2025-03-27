@@ -1,0 +1,47 @@
+.todo-header {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    /* background: linear-gradient(to right, rgba(0, 51, 102, 0.849), rgba(0, 204, 204, 0.86)), url('../assets/studyplane-bgimg.jpg'); */
+    background: linear-gradient(to right, rgba(23,109,129,0.850) 50%, rgba(0,195,255,0.86) 100%), url('../assets/todoimg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 170px;
+    margin-right: 250px;
+  }
+  
+  .overlay h1 {
+    /* height: 200px; */
+    color: #f6f6f7;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+
+  .overlay p {
+    color: #f6f6f7;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;   
+  }
+  
+  .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    z-index: 2;
+  }

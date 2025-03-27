@@ -1,0 +1,112 @@
+
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    /* background: linear-gradient(to right, rgba(0, 51, 102, 0.849), rgba(0, 204, 204, 0.86)), url('../assets/studyplane-bgimg.jpg'); */
+    background: linear-gradient(to right, rgba(23,109,129,0.850) 50%, rgba(0,195,255,0.86) 100%), url('../assets/studyplane-bgimg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 170px;
+    margin-right: 250px;
+  }
+  
+  .overlay h1 {
+    /* height: 200px; */
+    color: #f6f6f7;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+
+  .overlay p {
+    color: #f6f6f7;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;   
+  }
+  
+  .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    z-index: 2;
+  }
+
+.study-container{
+  height: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f7;
+}
+
+.description{
+  padding: 30px;
+  /* height: 300px; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.description h2{
+  font-size: 2.8rem;
+  color: #176d81;
+}
+
+.description p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #495557;
+  text-align: center;
+  padding: 20px 100px;
+  line-height: 28px;
+}
+  
+.content{
+  padding: 30px;
+}
+
+.content h2{
+  font-size: 2.5rem;
+  /* color: #004352; */
+  /* color: linear-gradient(90deg, rgba(23,109,129,0.850) 50%, rgba(0,195,255,0.86) 100%); */
+  background: linear-gradient(90deg, rgb(23, 110, 129) 30%, rgb(0, 160, 209) 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content p {
+  font-size: 25px;
+  font-weight: 500;
+  color: #495557;
+  text-align: start;
+  padding: 25px 0px;
+  line-height: 34px;
+}
+
+.content h3{
+  font-size: 25px;
+  font-weight: 500;
+  color: #495557;
+  text-align: start;
+  padding: 10px 0px;
+  line-height: 34px;
+}

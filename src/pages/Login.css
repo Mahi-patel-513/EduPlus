@@ -1,0 +1,205 @@
+.login-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(135deg, #6a11cb, #2575fc); */
+    /* background: #f4f4f4; */
+    background: linear-gradient(90deg, rgba(18,160,191,1) 30%, rgba(52,220,227,1) 100%);
+    /* padding: 10px; */
+    gap: 20px;
+  }
+
+  .edupluselogo{
+    width: 220px;
+  }
+
+  .formclass{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .login-box {
+    width: 350px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 18px;
+    border-radius: 15px;
+    gap: 10px;
+    /* max-width: 100%; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.812);
+  }
+  
+  .h2class {
+    color: #176D81;
+    /* margin-bottom: 20px; */
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+  
+  input {
+    width: 95%;
+    padding: 12px;
+    margin: 5px;
+    border: 1px solid #176D81;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .btn1 {
+    width: 95%;
+    padding: 10px;
+    background: #176D81;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 18px;
+    margin-top: 12px;
+    transition: background 0.5s;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+  
+  .btn1:hover {
+    background: #00c3ff;
+  }
+  
+  .loginpara{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: #176D81;
+    font-size: 15px;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+  
+  .loginpara:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .login-box {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .h2class {
+      font-size: 20px;
+    }
+  
+    input, .btn1 {
+      font-size: 16px;
+    }
+  
+    .loginpara {
+      font-size: 13px;
+    }
+  }
+
+  .social-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .google-btn, .facebook-btn {
+    width: 140%;
+    padding: 10px;
+    /* padding: 12px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 18px;
+    color: black;
+    margin-top: 3px;
+    border: solid 1px #176D81;
+    background-color: white;
+    transition: transform 0.5s ease;
+  }
+
+  .google-btn:hover, .facebook-btn:hover{
+    transform: translateY(-8px);
+  }
+
+  .googlelogo{
+    width: 25px;
+    height: 25px;
+  }
+
+  /* forgot password style
+  .forgot-password {
+    margin-top: 10px;
+    color: #6a11cb;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+
+  
+/* Dark Mode Styles
+.dark-mode {
+    background: #1e1e1e;
+    color: white;
+  }
+  
+  .dark-mode .login-box {
+    background: #2c2c2c;
+  }
+  
+  .dark-mode input {
+    background: #3c3c3c;
+    color: white;
+    border: 1px solid #555;
+  }
+  
+  .dark-mode button {
+    background: #6a11cb;
+  }
+  
+  .dark-mode .forgot-password,
+  .dark-mode p {
+    color: #b3aaff;
+  }
+  
+  /* Dark Mode Button
+  .dark-mode-btn {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #444;
+    color: white;
+  }
+  
+  .dark-mode .dark-mode-btn {
+    background: #ddd;
+    color: black;
+  } */
+  
+  
+  
